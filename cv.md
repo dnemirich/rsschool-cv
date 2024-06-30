@@ -9,11 +9,13 @@
 
 ---
 ### About me
-Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
+I am a biologist and a bioinformatician, who wants to switch to software development. In my profession, I have had time to try both working in academia and in a high-tech startup. I like to study on a regular basis and learn something new in various fields.
 
 ---
 ### Skills
-Навыки (языки программирования, фреймворки, методологии, системы контроля версий и инструменты разработки, которыми вы владеете)
+- Python, R, JS, Bash
+- git, Github, GitLab
+- HTML5, CSS, SASS
 
 ---
 ### Code example
@@ -52,7 +54,10 @@ function accum(s) {
 
 ---
 ### Job experience 
-Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и ссылками на исходный код.
+
+_2020 - 2022_ | Bioinformatician (Ksitest, Russia) \
+**Skills involved**: Python and R programming, Bash, Docker, git, GitLab, Nextflow, Jira, Airtable
+
 
 ---
 ### Education
