@@ -4,10 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>CV</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#summary">Summary</a></li>
+                    <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                    <li class="nav-item"><a href="#experience">Work experience</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#education">Education</a></li>
+                    <li class="nav-item"><a href="#courses">Courses</a></li>
+                    <li class="nav-item"><a href="#languages">Languages</a></li>
+                    <li class="nav-item"><a href="#code">Code</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section" id="profile">
+                <img src="assets/cat_avatar.jpg" alt="Cat in a spacesuit" width="100" height="100">
+                <div class="profile-text">
+                    <h1>Daria Nemirich</h1>
+                    <h2 class="section-header">Junior Frontend-developer</h2>
+                </div>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-header">Summary</h2>
+                <p> I am a biologist and a bioinformatician, who wants to switch to software development. In my
+                    profession,
+                    I
+                    have
+                    had time to try both working in academia and in a high-tech startup. During this time, I realized
+                    that I
+                    enjoy solving tasks that are closer to real life more. I also like to tinker with small details and
+                    design, which is why I chose frontend development.</p>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-header">Contacts</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <img src="assets/map-marker-alt-solid.svg" alt="Map marker" width="30" height="30"> Frankfurt am
+                        Main, Germany
+                    </li>
+                    <li class="contacts-item">
+                        <img src="assets/discord.svg" alt="Discord logo" width="30" height="30">
+                        Discord: <a href="https://discordapp.com/users/573967094710796292">Daria Nemirich
+                            (@dnemirich)</a>
+                    </li>
+                    <li class="contacts-item">
+                        <img src="assets/github-alt.svg" alt="Github logo" width="30" height="30">
+                        Github: <a href="https://github.com/dnemirich">@dnemirich</a>
+                    </li>
+                    <li class="contacts-item">
+                        <img src="assets/telegram-plane.svg" alt="Telegram logo" width="30" height="30">
+                        Telegram: <a href="https://t.me/dlagrange">@dlagrange</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-header">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">Python, R, JS, Bash</li>
+                    <li class="skills-item">git, Github, GitLab</li>
+                    <li class="skills-item">HTML5, CSS, SASS</li>
+                    <li class="skills-item">Figma, Adobe Photoshop, Lightroom</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-header">Code example</h2>
+                <p class="code-description">
+                    An example of code from codewars.com, task "Mumbling". Function accum takes a string consisting only
+                    of
+                    letters
+                    from a..z and A..Z and converts it into such a string, that each character repeats the number of
+                    times
+                    that
+                    corresponds to the character's position in the string. Repetitions always start with a capital
+                    letter
+                    and
+                    are
+                    separated with a single dash.
+                <pre class="description-pre">
+                Examples:
+                accum("abcd") -> "A-Bb-Ccc-Dddd"
+                accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+                accum("cwAt") -> "C-Ww-Aaa-Tttt"
+            </pre>
+                <pre class="code-pre">
+            <code>
+                function accum(s) {
+                    const arr = s.toLowerCase().split('');
+                    let answer = [];
+                    for (let i = 0; i &lt; arr.length; i++) {
+                        let counter = i + 1;
+                        let str = "";
+                        str += arr[i].toUpperCase();
+                        while (counter &gt; 0){
+                            if (counter !== 1) {
+                                str += arr[i];
+                                counter--;
+                            } else {
+                                answer.push(str);
+                                break;
+                            }
+                        }
+                    }
+                    return answer.join('-');
+                }
+            </code>
+        </pre>
+            </section>
+            <section class="section" id="experience">
+                <h2 class="section-header">Work experience</h2>
+                <div class="experience-container">
+                    <h3 class="experience-header">Ksitest - 2020 - 2022</h3>
+                    <p class="experience-title">Bioinformatician</p>
+                    <p class="experience-description"> As part of the RnD team, I was involved in the integration of
+                        genomic
+                        selection of livestock (rams,
+                        cows) in Russia.
+                    </p>
+                    <div class="experience-skills"> <span class="skills-tag">Bioinformatics</span><span
+                            class="skills-tag">NGS</span><span class="skills-tag">Python and R programming</span>
+                        <span class="skills-tag">Bash</span><span class="skills-tag">Docker</span><span
+                            class="skills-tag">Git</span><span class="skills-tag">Nextflow</span><span
+                            class="skills-tag">Agile</span>
+                    </div>
+                </div>
+                <div class="experience-container">
+                    <h3 class="experience-header">ITMO University - 2019 - 2020</h3>
+                    <p class="experience-title">Student Intern</p>
+                    <p class="experience-description"> As an intern in an international "Computer Technologies" lab, I
+                        did
+                        my
+                        thesis work on the applicability of phylogenetic networks to map the evolution of viruses.</p>
+                    <div class="experience-skills"> <span class="skills-tag">Bioinformatics</span><span
+                            class="skills-tag">Python</span><span class="skills-tag">Bash</span>
+                        <span class="skills-tag">Data simulations</span><span
+                            class="skills-tag">Benchmarking</span><span class="skills-tag">Phylogenetics</span><span
+                            class="skills-tag">Graph Theory</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-header">Education</h2>
+                <ul class="education-list">
+                    <li class="education-item">
+                        <h3 class="education-title">ITMO University</h3>
+                        <p class="education-description">M.Sc in Applied Mathematics and Informatics</p>
+                        <p class="education-info">Saint Petersburg, Russia - 2018 - 2020</p>
+                    </li>
+                    <li class="education-item">
+                        <h3 class="education-title">Saint Petersburg State University</h3>
+                        <p class="education-description">B.Sc. in Biology</p>
+                        <p class="education-info">Saint Petersburg, Russia - 2013 - 2017</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-header">Courses</h2>
+                <ul class="education-list">
+                    <li class="education-item">
+                        <h3 class="education-title">RS School</h3>
+                        <p class="education-description">Frontend-development</p>
+                        <p class="education-info">06.2024 - Present</p>
+                    </li>
+                    <li class="education-item">
+                        <h3 class="education-title">IT Girls School</h3>
+                        <p class="education-description">Frontend-development</p>
+                        <p class="education-info">05.2021 - 01.2022</p>
+                    </li>
+                    <li class="education-item">
+                        <h3 class="education-title">Coursera</h3>
+                        <p class="education-description">Machine learning</p>
+                        <p class="education-info">12.2018 – 01.2019</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-header">Languages</h2>
+                <ul class="languages-list">
+                    <li class="languages-item">English (Upper-Intermediate)</li>
+                    <li class="languages-item">German (Intermediate)</li>
+                    <li class="languages-item">Russian (Native)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>&copy; 2024</p>
+                <a href="https://github.com/dnemirich">dnemirich</a>
+            </div>
+            <a
+                href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0#%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F-1"><img
+                    src="assets/rs-school-logo.svg" alt="RS school logo" width="100" height="40"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
