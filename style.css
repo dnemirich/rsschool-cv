@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    color: #353232;
+
+    background-color: #EBEAEC;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-bottom: 0.5px solid #AEAEAE;
+}
+
+.footer .container {
+    border-bottom: none;
+}
+
+.header-nav {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item>a {
+    font-size: 16px;
+    color: #353232;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-item>a:hover {
+    color: #928B99;
+    text-decoration: underline;
+}
+
+.main .container {
+    display: grid;
+    grid-template-areas: "profile profile profile"
+        "summary work work"
+        "contacts education courses"
+        "skills code code"
+        "lang code code";
+    gap: 25px;
+}
+
+
+.section-header {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    border-bottom: 0.5px solid #AEAEAE;
+}
+
+#profile {
+    grid-area: profile;
+    display: flex;
+    gap: 20px;
+
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 0.5px solid #AEAEAE;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 30px;
+    font-weight: 600;
+    color: #3F3A45;
+    text-transform: uppercase;
+}
+
+#profile .section-header {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: #928B99;
+    text-transform: uppercase;
+    border: none;
+}
+
+#profile>img {
+    border-radius: 50%;
+}
+
+#summary {
+    grid-area: summary;
+}
+
+#contacts {
+    grid-area: contacts;
+    min-width: 200px;
+}
+
+.contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-item img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contacts-item>a {
+    padding-left: 2px;
+    text-decoration: none;
+    color: #928B99;
+}
+
+.contacts-item>a:hover {
+    color: #928B9980;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+.skills-list,
+.languages-list {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+#languages {
+    grid-area: lang;
+}
+
+#experience {
+    grid-area: work;
+}
+
+#experience h3,
+#education h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.experience-container > p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.experience-header {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.experience-title,
+.education-description {
+    color: #A75A54;
+}
+
+
+.skills-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #A75A5420;
+    margin-top: 8px;
+
+}
+
+#education {
+    grid-area: education;
+}
+
+.education-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.education-item {
+    border-bottom: 0.5px dashed #AEAEAE;
+}
+
+.education-item p {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.education-info {
+    color: #5C5761;
+}
+
+#courses {
+    grid-area: courses;
+}
+
+#code {
+    grid-area: code;
+}
+
+.description-pre {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.footer .container div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.footer a {
+    color:#353232;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color:#35323280;
+}
